@@ -11,13 +11,13 @@ body{
   background-color: var(--main-white);
 }
 
-.main h1{
+h1{
   font-size: var(--main-title);
   font-family: 'Roboto';
   margin-right:40px
 }
 
-.main h2{
+h2{
   font-size: var(--sous-titre);
   font-family: 'Alegreya';
 }
@@ -39,3 +39,9 @@ h1, h2,.main p, button, .bouton_plus {
 .index_open:last-of-type button{
   margin:40px
 }
+
+.center_title{
+  text-align: center
+}
+
+.prix

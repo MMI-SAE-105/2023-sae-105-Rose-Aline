@@ -77,3 +77,7 @@
         color:white;
         text-shadow: var(--shadow_text_carousel) ;   
       }
+
+    .orange{
+      color: var(--orange)
+    }
