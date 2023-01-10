@@ -1,0 +1,13 @@
+.picture_width_max{
+    width:100%
+}
+
+.pictorialisme_index{
+    background-color: var(--beige)
+}
+
+.pictorialisme_index p{
+    font-size: var(--Texte-Alegreya);
+    font-family: 'Alegreya';
+    margin-bottom:1rem
+}
