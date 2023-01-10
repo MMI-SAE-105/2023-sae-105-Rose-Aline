@@ -14,8 +14,20 @@
 <body>
     <header>
         <a href="/fr/index.html"><img src="/public/icons/index.svg" alt="icone cliquable pour accéder à l'index"></a>
-        <img src="/public/icons/menu.svg" alt="icone cliquable pour accéder au menu">
+        <button aria-controls="MenuNav" @click="menuIsOpen = ! menuIsOpen" class="menu_Btn">
+            <img src="/public/icons/menu.svg" alt="icone cliquable pour accéder au menu">
+        </button>
     </header>
+    
+    <nav id="MenuNav" x-show="menuIsOpen" x-transition.duration.400ms 
+    class="test">
+    <p>ACCUEIL</p> 
+    <p>EXPOSITION</p>
+    <p>LE PICTURALISME</p>
+    <p>LES ARTISTES</p>
+    <p>CONTACT</p>
+    </nav>
+
     <div class="main">
         <div class="pictorialisme_index">
 
@@ -24,21 +36,17 @@
     
             <h1>LE PICTORIALISME</h1>
                 <h2>Exposition du 13 Avril au 21 Juin 2021</h2>
-                <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="index_Btn">
-                    <img class="bouton_plus" src="/public/icons/Bouton_PLUS.svg" alt="icone cliquable pour voir plus d'information">
-                </button>
-                <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.1000ms 
-                class="index_open">
-            <p>
+                <div x-data="{ouvre:false}">
+                    <button @click="ouvre = !ouvre" class="index_Btn">
+                        <img class="bouton_plus" src="/public/icons/Bouton_PLUS.svg" alt="icone cliquable pour voir plus d'information">
+                    </button>
+            <p x-show="ouvre" x-collapse x-transition.duration.400ms >
                 Le pictorialisme est un mouvement esthétique international qui caractérise la photographie à partir de 1885 environ. 
-            </p>
-            <p>
-                Les artistes pictorialistes souhaitent « dépasser la simple imitation mécanique pour ériger la photographie en un art autonome et distinct.
-            </p>       
+                Les artistes pictorialistes souhaitent « dépasser la simple imitation mécanique pour ériger la photographie en un art autonome et distinct.     
                 <a href="exposition.html">
                     <button>Voir plus</button>
                 </a>
-            </nav>
+            </p>
 
     </div> 
 
