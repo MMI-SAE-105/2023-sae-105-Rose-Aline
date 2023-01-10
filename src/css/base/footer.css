@@ -2,5 +2,28 @@ footer {
     background: var(--dark-beige);
     padding-left: 20px;
     padding-right: 20px;
+    font-size: var(--footer-text);
+    font-family: 'Ubuntu';
+    padding:20px
     }
     
+.footer_options{
+    display: flex;
+    justify-content: right;
+}
+
+.text_footer{
+    display: block;
+}
+
+.icone_footer{
+    display: flex;
+}
+
+footer img{
+    margin-right:10px
+}
+
+footer p{ 
+    padding-right: 10px; 
+}
