@@ -51,10 +51,6 @@
         position: relative; 
         text-align:right 
        }
-       
-       .carrousel_ecran figcaption h2{
-        padding-right:40px;
-       }
 
        .carrousel figure {
         position:relative;

@@ -1,0 +1,11 @@
+img{
+    margin-right:auto;
+    margin-left:auto;
+    display:block;
+}
+
+figure{
+    font-size: var(--Small-text-Ubuntu);
+    font-family: 'Ubuntu';
+    color: var(--dark-grey)
+}

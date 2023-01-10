@@ -21,6 +21,8 @@ h1{
 h2{
   font-size: var(--sous-titre);
   font-family: 'Alegreya';
+  margin-bottom: 5px ;
+  margin-top: -5px
 }
 
 .main button:not(.index_Btn){
@@ -34,7 +36,9 @@ h2{
 }
 
 h1, h2,.main p, .bouton_plus {
-  margin-left:30px
+  margin-left:30px;
+  margin-right:30px
+
 }
 
 .index_open:last-of-type button{
