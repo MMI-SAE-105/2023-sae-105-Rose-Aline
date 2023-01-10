@@ -10,6 +10,7 @@ footer {
 .footer_options{
     display: flex;
     justify-content: right;
+    font-weight: 700;
 }
 
 .text_footer{
@@ -27,3 +28,9 @@ footer img{
 footer p{ 
     padding-right: 10px; 
 }
+
+footer a{
+text-decoration: none;
+color:black
+}
+

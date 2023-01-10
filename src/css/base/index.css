@@ -3,7 +3,8 @@
 }
 
 .pictorialisme_index{
-    background-color: var(--beige)
+  background-color: var(--beige);
+  margin-bottom:20px
 }
 
 .pictorialisme_index p{
@@ -64,6 +65,15 @@
           padding: 3px;
           text-align: center;
           position:absolute;
-          bottom:100px
+          bottom:100px;
       }
       
+      #ecran-3 figcaption, #ecran-2 figcaption{
+        bottom: 70px
+      }
+
+      figcaption a{
+        text-decoration: none;
+        color:white;
+        text-shadow: var(--shadow_text_carousel) ;   
+      }
