@@ -8,3 +8,27 @@ header {
     padding-left: 20px;
     padding-right: 20px;
     }
+
+    .menu_Btn{
+        border:none;
+        background-color:transparent
+    }
+
+    #MenuNav{
+        position:absolute;
+        background-color:  var(--main-white);
+        right:0;
+        padding:40px 30px 80px 20px;
+    }
+
+    .menu_header p{
+        padding-left:20px;
+        font-size: var(--Bouton_menu);
+        font-family: 'Roboto';
+        font-weight: 800;
+    }
+
+
+    .menu_header hr{
+        color: var-(--dark-beige)
+    }
