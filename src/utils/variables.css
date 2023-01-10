@@ -1,0 +1,26 @@
+:root {
+/* Color styles */
+--main-white: rgba(246, 247, 238, 1);
+--beige: rgba(236, 237, 191, 0.7799999713897705);
+--dark-grey: rgba(108, 97, 97, 1);
+--dark-beige: rgba(217, 203, 134, 1);
+--orange: rgba(218, 120, 29, 1);
+
+/* Text-size styles */
+--main-title: 24px;
+--sous-titre: 20px;
+--texte--alegreya: 18px;
+--footer-text: 11px;
+--footer-text-medium: 12px;
+--texte--alegreya-bold: 18px;
+--texte--ubuntu: 15px;
+--texte--ubuntu-big: 20px;
+--text--ubuntu-big--bold: 20px;
+--small-text--ubuntu: 13px;
+--bouton_menu: 19px;
+
+/* Effect styles */
+--shadow_text_carousel:  0px 2px 4px rgba(0, 0, 0, 0.8);
+--shadow_main_picture:  0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
