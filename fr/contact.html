@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="" {noscroll:menuIsOpen,}>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Le pictorialisme</title>
+  <link rel="stylesheet" href="/src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+
+</head>
+
+<body>
+    <header>
+        <a href="/fr/index.html"><img src="/public/icons/index.svg" alt="icone cliquable pour accéder à l'index"></a>
+        <img src="/public/icons/menu.svg" alt="icone cliquable pour accéder au menu">
+    </header>
+        
+    <h1>Contact</h1>
+
+    <form>
+        <label for="name" class="contact_text">Name / Last name</label>
+        <input type="text" id="name" name="user_name" class="contact_text">
+
+        <label for="objet" class="contact_text">Subject</label>
+        <input type="objet" id="objet" name="objet" class="contact_text">
+        
+        <label for="msg" class="contact_text">Message &#58;</label>
+        <textarea id="msg" name="user_message" class="contact_text"></textarea>
+        
+        <input type="submit" value="Send" class="contact_button">
+
+    </form>    
+    
+    <footer>
+        <img src="/public/icons/MMI_dut_small_white.svg" alt="Icone du département MMI de montbéliard">
+        <p>
+            MMI 1 - C1   <a href="mailto:alinerose262003@gmail.com">alinerose262003@gmail.com</a>
+        </p>
+        <p>
+            Projet réalisé dans le cadre d&#39;un exercice
+            pédagogique au <a href="http://mmimontbeliard.com/contact">département MMI de Montbéliard</a>
+        </p>
+        <a href="https://fondation-cartier.tickeasy.com/fr-FR/exposition"><p>Billeterie</p></a>
+        <a href="/fr/contact.html"><p>Contact</p></a>
+    </footer>
+  </body>
+  </html>
+  
