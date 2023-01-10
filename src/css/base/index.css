@@ -51,6 +51,7 @@
         position: relative; 
         text-align:right 
        }
+       
        .carrousel_ecran figcaption h2{
         padding-right:40px;
        }
@@ -63,13 +64,12 @@
 
     .carrousel figcaption {
           padding: 3px;
-          text-align: center;
           position:absolute;
-          bottom:100px;
+          bottom:10px;
       }
       
       #ecran-3 figcaption, #ecran-2 figcaption{
-        bottom: 70px
+        left:40px
       }
 
       .carrousel figcaption a{
@@ -80,10 +80,4 @@
 
     .orange{
       color: var(--orange)
-    }
-
-    .frise_chronologique figure{
-      display:flex;
-      margin-left:2rem;
-      margin-top:2rem
     }

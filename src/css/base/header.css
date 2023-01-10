@@ -19,6 +19,8 @@ header {
         background-color:  var(--main-white);
         right:0;
         padding:40px 30px 80px 20px;
+        z-index:1;
+        box-shadow: var(--shadow_main_picture);
     }
 
     .menu_header p{
@@ -30,5 +32,9 @@ header {
 
 
     .menu_header hr{
-        color: var-(--dark-beige)
-    }
+        color: var(--dark-beige);
+        height: 1px;
+        background-color: var(--dark-beige);
+        border: 0;
+        margin:20px
+        }
