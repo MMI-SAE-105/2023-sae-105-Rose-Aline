@@ -24,14 +24,22 @@
     
             <h1>LE PICTORIALISME</h1>
                 <h2>Exposition du 13 Avril au 21 Juin 2021</h2>
-                <img class="bouton_plus" src="/public/icons/Bouton_PLUS.svg" alt="icone cliquable pour voir plus d'information">
+                <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="index_Btn">
+                    <img class="bouton_plus" src="/public/icons/Bouton_PLUS.svg" alt="icone cliquable pour voir plus d'information">
+                </button>
+                <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.1000ms 
+                class="index_open">
             <p>
                 Le pictorialisme est un mouvement esthétique international qui caractérise la photographie à partir de 1885 environ. 
             </p>
             <p>
                 Les artistes pictorialistes souhaitent « dépasser la simple imitation mécanique pour ériger la photographie en un art autonome et distinct.
             </p>       
-                <a href="exposition.html"><button>Voir plus</button></a>
+                <a href="exposition.html">
+                    <button>Voir plus</button>
+                </a>
+            </nav>
+
     </div> 
 
     <div class="carrousel" x-data="{}">

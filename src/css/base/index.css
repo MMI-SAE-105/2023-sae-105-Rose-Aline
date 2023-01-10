@@ -12,6 +12,10 @@
     margin-bottom:1rem
 }
 
+.index_Btn{
+  border:none;
+  background-color:var(--beige)
+}
 
 .carrousel_parent-ecrans {
     display: flex;
@@ -26,7 +30,7 @@
         position:relative
     }
     
-        .carrousel {
+      .carrousel {
       position: relative;
     }
 
@@ -49,3 +53,5 @@
        .carrousel_ecran figcaption h2{
         padding-right:40px;
        }
+
+       figure

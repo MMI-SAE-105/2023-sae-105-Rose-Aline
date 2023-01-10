@@ -22,7 +22,7 @@ body{
   font-family: 'Alegreya';
 }
 
-.main button{
+.main button:not(.index_Btn){
   background-color: var(--orange);
   border:none;
   padding:2px 52px 2px 52px;
@@ -36,3 +36,6 @@ h1, h2,.main p, button, .bouton_plus {
   margin-left:40px
 }
 
+.index_open:last-of-type button{
+  margin:40px
+}
