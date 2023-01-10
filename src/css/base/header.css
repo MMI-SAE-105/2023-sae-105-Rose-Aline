@@ -18,7 +18,7 @@ header {
         position:absolute;
         background-color:  var(--main-white);
         right:0;
-        padding:40px 30px 80px 20px;
+        padding:40px 30px 10px 20px;
         z-index:1;
         box-shadow: var(--shadow_main_picture);
     }
@@ -38,3 +38,12 @@ header {
         border: 0;
         margin:20px
         }
+
+    .menu_langue{
+        padding-top:50px;
+        display: flex; 
+    }
+
+    #MenuNav img{
+        padding-right:5px
+    }
