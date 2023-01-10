@@ -4,7 +4,7 @@ img{
     display:block;
 }
 
-figure{
+.image_description{
     font-size: var(--Small-text-Ubuntu);
     font-family: 'Ubuntu';
     color: var(--dark-grey)
