@@ -10,11 +10,33 @@
     <script defer src="https://unpkg.com/alpinejs"></script>
 
 </head>
+
+
 <body>
     <header>
         <a href="/fr/index.html"><img src="/public/icons/index.svg" alt="icone cliquable pour accéder à l'index"></a>
-        <img src="/public/icons/menu.svg" alt="icone cliquable pour accéder au menu">
+        <button aria-controls="MenuNav" @click="menuIsOpen = ! menuIsOpen" class="menu_Btn">
+            <img src="/public/icons/menu.svg" alt="icone cliquable pour accéder au menu">
+        </button>
     </header>
+    
+    <nav id="MenuNav" x-show="menuIsOpen" x-transition.duration.400ms 
+    class="menu_header">
+    <a href="/fr/index.html"><p>ACCUEIL</p></a>
+    <hr>
+    <a href="/fr/exposition.html"><p>EXPOSITION</p></a>
+    <hr>
+    <a href="/fr/pictorialisme.html"><p>LE PICTORIALISME</p></a>
+    <hr>
+    <a href="/fr/artistes.html"><p>LES ARTISTES</p></a>
+    <hr>
+    <a href="/fr/contact.html"><p>CONTACT</p></a>
+        <div class="menu_langue">
+            <a href="/fr/index.html"><img src="/public/icons/EN.svg" alt="Icone cliquable pour changer la langue en anglais"></a>
+            <a href="/en/index.html"><img src="/public/icons/FR.svg" alt="Icone cliquable pour changer la langue en français"></a>
+        </div>
+    </nav>
+
         
     <h1>LES ARTISTES DU PICTORALISME</h1>
     <p>Le pictorialisme est un mouvement esthétique international qui caractérise la photographie à partir de 1885 environ.</p>
