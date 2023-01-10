@@ -83,5 +83,7 @@
     }
 
     .frise_chronologique figure{
-      display:flex
+      display:flex;
+      margin-left:2rem;
+      margin-top:2rem
     }
