@@ -40,13 +40,13 @@
                     <button @click="ouvre = !ouvre" class="index_Btn">
                         <img class="bouton_plus" src="/public/icons/Bouton_PLUS.svg" alt="icone cliquable pour voir plus d'information">
                     </button>
-            <p x-show="ouvre" x-collapse x-transition.duration.400ms >
-                Le pictorialisme est un mouvement esthétique international qui caractérise la photographie à partir de 1885 environ. 
-                Les artistes pictorialistes souhaitent « dépasser la simple imitation mécanique pour ériger la photographie en un art autonome et distinct.     
-                <a href="exposition.html">
+            <div x-show="ouvre" x-collapse x-transition.duration.400ms >
+                <p>Le pictorialisme est un mouvement esthétique international qui caractérise la photographie à partir de 1885 environ. </p>
+                <p>Les artistes pictorialistes souhaitent « dépasser la simple imitation mécanique pour ériger la photographie en un art autonome et distinct. </p>    
+                <p><a href="exposition.html">
                     <button>Voir plus</button>
-                </a>
-            </p>
+                </a></p>
+            </div>
 
     </div> 
 
