@@ -7,5 +7,10 @@ img{
 .image_description{
     font-size: var(--Small-text-Ubuntu);
     font-family: 'Ubuntu';
-    color: var(--dark-grey)
+    color: var(--dark-grey);
+    padding-bottom:20px
+}
+
+.article_img{
+    padding-top:30px
 }
