@@ -27,3 +27,11 @@
     right:20px;
     top:10px;
 }
+
+#decalage_artiste:first-child{
+    padding-top:100px
+}
+
+.artistes_main_texte{
+    padding-bottom:20px
+}
