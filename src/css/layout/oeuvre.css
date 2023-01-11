@@ -1,0 +1,39 @@
+.oeuvre_info{
+    display:flex
+}
+
+.oeuvre_info_texte{
+    display:block;
+    margin-left: 20px;
+    line-height: 0.8;
+    position:relative;
+    top:65px
+}
+
+.oeuvre_info_texte h2{
+    position:relative;
+    right:30px;
+    margin-right:20px;
+    font-size: var(--sous-titre);
+    font-family: 'Alegreya';
+}
+
+.oeuvre_info img{
+    position:relative;
+    top:20px;
+    right:20px
+}
+
+.oeuvre_info_texte p{
+    color: var(--dark-grey);
+    font-size: var(--small-text--ubuntu);
+    font-family: 'Ubuntu';
+}
+
+.orange_link{
+    text-decoration: none;
+}
+
+.oeuvre_info figcaption{
+    padding-top:25px
+}
