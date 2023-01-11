@@ -8,7 +8,9 @@
 @import "base/main.css";
 @import "base/media.css";
 @import "base/header.css";
-@import "base/index.css";
 @import "base/footer.css";
-@import "base/pictorialisme.css";
 
+/* Layout */
+@import "layout/index.css";
+@import "layout/pictorialisme.css";
+@import "layout/contact.css";

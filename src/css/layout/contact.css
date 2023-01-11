@@ -1,0 +1,36 @@
+#pages_autres label{
+    color: var(--light-text);
+    font-size: var(--frise--lieux);
+    font-family: 'Ubuntu' ;
+}    
+
+.contact_text{
+    display:flex;
+    margin-left:12%;
+    padding-bottom:5px;
+    padding-top:5px;
+    width:280px;
+    border-radius:5px;
+    border:none;
+}
+
+#msg{
+    height:300px;
+}
+
+#msg, #name, #objet{
+background-color: var(--dark-beige);
+opacity: 0.5;
+}
+
+.contact_button{
+    margin-left:60%;
+    margin-top:10px;
+    padding-left:20px;
+    padding-right:20px;
+    border:none;
+    border-radius:9px;
+    font-family: 'Arvo';
+    font-size: var(--small-body);
+    margin-bottom:151px
+}
