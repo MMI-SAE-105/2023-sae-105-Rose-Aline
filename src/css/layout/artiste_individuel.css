@@ -10,7 +10,7 @@
     max-width:149px;
     max-height:155px;
     margin-top:30px;
-    margin-right:20px
+    margin-right:15px
 }
 
 .artiste_info_texte{
@@ -46,4 +46,9 @@
 .artistes_i_fig h1, .artistes_i_fig h2{
     position:relative;
     right:20px
+}
+
+.article p:first-child{
+    padding-bottom:20px;
+    padding-top:20px
 }
