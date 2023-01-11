@@ -13,41 +13,91 @@
 <body>
     <header>
         <a href="/fr/index.html"><img src="/public/icons/index.svg" alt="icone cliquable pour accéder à l'index"></a>
-        <img src="/public/icons/menu.svg" alt="icone cliquable pour accéder au menu">
+        <button aria-controls="MenuNav" @click="menuIsOpen = ! menuIsOpen" class="menu_Btn">
+            <img src="/public/icons/menu.svg" alt="icone cliquable pour accéder au menu">
+        </button>
     </header>
+    
+    <nav id="MenuNav" x-show="menuIsOpen" x-transition.duration.400ms 
+    class="menu_header">
+    <a href="/fr/index.html"><p>ACCUEIL</p></a>
+    <hr>
+    <a href="/fr/exposition.html"><p>EXPOSITION</p></a>
+    <hr>
+    <a href="/fr/pictorialisme.html"><p>LE PICTORIALISME</p></a>
+    <hr>
+    <a href="/fr/artistes.html"><p>LES ARTISTES</p></a>
+    <hr>
+    <a href="/fr/contact.html"><p>CONTACT</p></a>
+        <div class="menu_langue">
+            <a href="/fr/index.html"><img src="/public/icons/EN.svg" alt="Icone cliquable pour changer la langue en anglais"></a>
+            <a href="/en/index.html"><img src="/public/icons/FR.svg" alt="Icone cliquable pour changer la langue en français"></a>
+        </div>
+    </nav>
 
-            
-    <h2>Vortograph</h2>
-        <h2>1917</h2>
-        <p>ALVIN LANGDON COBURN</p>
-            <figure>
-                <img src="/public/img/Alvin_Langdon_Coburn_Vortograph.webp" alt="Vortograph par Alvin Langton Coburn">
-                <figcaption>
-                    Vortograph par Alvin Langton Coburn
-                </figcaption>    
-            </figure>
+    <div class="oeuvre_info">
+        <div class="oeuvre_info_texte">        
+        <h2>Vortograph</h2>
+            <h2>1917</h2>
+            <p>ALVIN LANGDON COBURN</p>
+        </div>
+                <figure>
+                    <img src="/public/img/Alvin_Langdon_Coburn_Vortograph.webp" alt="Vortograph par Alvin Langton Coburn">
+                    <figcaption>
+                        Vortograph par Alvin Langton Coburn
+                    </figcaption>    
+                </figure>
+            </div>
+        <div class="article">
+
 
     <p>Les motifs complexes de lumière et de ligne dans cette photographie ont été prise grâce a une machine conçu par Coburn.
+    </p>
+    <p>  
         Il utilise <a href="https://fr.wikipedia.org/wiki/Kal%C3%A9idoscope">un accessoire composé de trois miroirs</a>, serrés ensemble dans un triangle, à travers laquelle il a photographié une variété de surfaces pour produire les résultats de ces images. </p>
 
-    <p>
-        D&#39;AUTRE OEUVRES DE <a href="/fr/artistes/Alvin_langdon_coburn.html"><span class="orange">ALVIN LANGDON COBURN</span></a>
-    </p>
-    <figure>
-        <img src="/public/img/Alvin_Langdon_Coburn_Bridge.webp" alt="oeuvre de l'artiste Alvin Langton Coburn">
-        <figcaption>
-                <h1>Williamsburg Bridge</h1> <h2>1909</h2>
-            <a href="/fr/oeuvres/Williamsburg_Bridge.html">
+    <h1>
+        D&#39;AUTRE OEUVRES DE <a class="orange_link" href="/fr/artistes/Alvin_langdon_coburn.html"><span class="orange">ALVIN LANGDON COBURN</span></a>
+    </h1>
+    <figure class="artistes_i_img_fig">
+        <img src="/public/img/Alvin_Langdon_Coburn_Vortograph.webp" alt="oeuvre de l'artiste Alvin Langton Coburn">
+        <figcaption class="artistes_i_fig">
+                <h1>Vortograph</h1> <h2>1917</h2>
+            <a href="/fr/oeuvres/Votograph.html">
                 <button>Voir plus</button>          
             </a>
         </figcaption>    
     </figure>
-    <figure>
+    <figure class="artistes_i_img_fig">
         <img src="/public/img/Alvin_Langdon_Coburn.webp" alt="oeuvre de l'artiste Alvin Langton Coburn">
-        <figcaption>
+        <figcaption class="artistes_i_fig"> 
                 <h1>Broadway at Night</h1> <h2>1905</h2>
             <a href="/fr/oeuvres/Broadway_at_Night.html">
                 <button>Voir plus</button>          
             </a>
         </figcaption>    
     </figure>
+
+</div>
+<footer>
+    <div class="icone_footer">
+            <img src="/public/icons/MMI_dut_small_white.svg" alt="Icone du département MMI de montbéliard">
+        <div class="text_footer">
+            <p>
+                <b>
+                    MMI 1 - C1   <a href="mailto:alinerose262003@gmail.com">alinerose262003@gmail.com</a>
+                </b>
+            </p>
+            <p>
+                Projet réalisé dans le cadre d&#39;un exercice
+                pédagogique au <a href="http://mmimontbeliard.com/contact">département MMI de Montbéliard</a>
+            </p>
+            </div>
+        </div>
+            <div class="footer_options">
+                <a href="https://fondation-cartier.tickeasy.com/fr-FR/exposition"><p>Billeterie</p></a>
+                <a href="/fr/contact.html"><p>Contact</p></a>
+            </div>
+        </footer>
+</body>
+</html>
