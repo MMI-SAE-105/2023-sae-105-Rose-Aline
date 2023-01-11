@@ -13,44 +13,67 @@
 <body>
     <header>
         <a href="/fr/index.html"><img src="/public/icons/index.svg" alt="icone cliquable pour accéder à l'index"></a>
-        <img src="/public/icons/menu.svg" alt="icone cliquable pour accéder au menu">
+        <button aria-controls="MenuNav" @click="menuIsOpen = ! menuIsOpen" class="menu_Btn">
+            <img src="/public/icons/menu.svg" alt="icone cliquable pour accéder au menu">
+        </button>
     </header>
+    
+    <nav id="MenuNav" x-show="menuIsOpen" x-transition.duration.400ms 
+    class="menu_header">
+    <a href="/fr/index.html"><p>ACCUEIL</p></a>
+    <hr>
+    <a href="/fr/exposition.html"><p>EXPOSITION</p></a>
+    <hr>
+    <a href="/fr/pictorialisme.html"><p>LE PICTORIALISME</p></a>
+    <hr>
+    <a href="/fr/artistes.html"><p>LES ARTISTES</p></a>
+    <hr>
+    <a href="/fr/contact.html"><p>CONTACT</p></a>
+        <div class="menu_langue">
+            <a href="/fr/index.html"><img src="/public/icons/EN.svg" alt="Icone cliquable pour changer la langue en anglais"></a>
+            <a href="/en/index.html"><img src="/public/icons/FR.svg" alt="Icone cliquable pour changer la langue en français"></a>
+        </div>
+    </nav>
 
-            
+    <div class="oeuvre_info">
+        <div class="oeuvre_info_texte">  
     <h2>Nude - The pool</h2>
         <h2>1920</h2>
         <p>GEORGE SEELEY</p>
+    </div>
         <figure>
             <img src="/public/img/george_seeley_the_pool.webp" alt="Nude - the pool par George seeley">
             <figcaption>
                 Photo d'un homme recroquevillé
             </figcaption>    
         </figure>
+    </div>
+    <div class="article">
 
-    <p>
-        D&#39;AUTRE OEUVRES DE <a href="/fr/artistes/Alvin_langdon_coburn.html"><span class="orange">GEORGE SEELEY</span></a>
-    </p>
-    <figure>
-        <img src="/public/img/george_seeley_white_trees_crop.webp" alt="oeuvre de l'artiste Heinrich Khün">
-        <figcaption>
-                <h1>White Trees</h1> <h2>1910</h2>
-            <a href="/fr/oeuvres/White_trees.html">
-                <button>Voir plus</button>          
-            </a>
-        </figcaption>    
-    </figure>
-    <figure>
-        <img src="/public/img/george_seeley_autumn.webp" alt="oeuvre de l'artiste Heinrich Khün">
-        <figcaption>
-                <h1>Autumn</h1> <h2>1910</h2>
-            <a href="/fr/oeuvres/Autumn.html">
-                <button>Voir plus</button>          
-            </a>
-        </figcaption>    
-    </figure>
+        <h1>
+            D&#39;AUTRE OEUVRES DE <a class="orange_link" href="/fr/artistes/Goerge_seeley.html"><span class="orange">GEORGE SEELEY</span></a>
+        </h1>    
+        <figure class="artistes_i_img_fig">
+            <img src="/public/img/george_seeley_autumn.webp" alt="oeuvre de l'artiste Heinrich Khün">
+            <figcaption class="artistes_i_fig">
+                    <h1>Autumn</h1> <h2>1910</h2>
+                <a href="/fr/oeuvres/Autumn.html">
+                    <button>Voir plus</button>          
+                </a>
+            </figcaption>    
+        </figure>
+        <figure class="artistes_i_img_fig">
+            <img src="/public/img/george_seeley_white_trees_crop.webp" alt="oeuvre de l'artiste Heinrich Khün">
+            <figcaption class="artistes_i_fig">
+                    <h1>White Trees</h1> <h2>1910</h2>
+                <a href="/fr/oeuvres/White_trees.html">
+                    <button>Voir plus</button>          
+                </a>
+            </figcaption>    
+        </figure>
+</div>
 
-
-    <footer>
+   <footer>
         <div class="icone_footer">
                 <img src="/public/icons/MMI_dut_small_white.svg" alt="Icone du département MMI de montbéliard">
             <div class="text_footer">
