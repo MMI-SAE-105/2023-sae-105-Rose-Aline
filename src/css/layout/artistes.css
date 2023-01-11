@@ -1,0 +1,29 @@
+.artistes_fig{
+    position: relative;
+    bottom:30px
+}
+
+#decalage_artiste figcaption{
+    left:15px
+}
+
+#decalage_artiste .image_artiste{
+    top:25px
+}
+
+.artistes_img_fig{
+    display:flex;
+}
+
+.image_artiste{
+    max-width: 100px;
+    max-height:100px;
+    position:relative;
+    margin-left:50px;
+}
+
+.artistes_fig h1, .artistes_fig h2{
+    position: relative;
+    right:20px;
+    top:10px;
+}
