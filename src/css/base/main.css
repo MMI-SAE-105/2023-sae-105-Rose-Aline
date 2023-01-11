@@ -25,7 +25,7 @@ h2{
   margin-top: -5px
 }
 
-.main button:not(.index_Btn){
+.article button, .main button:not(.index_Btn){
   background-color: var(--orange);
   border:none;
   padding:2px 52px 2px 52px;
