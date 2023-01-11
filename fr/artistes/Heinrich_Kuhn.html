@@ -13,28 +13,49 @@
 <body>
     <header>
         <a href="/fr/index.html"><img src="/public/icons/index.svg" alt="icone cliquable pour accéder à l'index"></a>
-        <img src="/public/icons/menu.svg" alt="icone cliquable pour accéder au menu">
+        <button aria-controls="MenuNav" @click="menuIsOpen = ! menuIsOpen" class="menu_Btn">
+            <img src="/public/icons/menu.svg" alt="icone cliquable pour accéder au menu">
+        </button>
     </header>
+    
+    <nav id="MenuNav" x-show="menuIsOpen" x-transition.duration.400ms 
+    class="menu_header">
+    <a href="/fr/index.html"><p>ACCUEIL</p></a>
+    <hr>
+    <a href="/fr/exposition.html"><p>EXPOSITION</p></a>
+    <hr>
+    <a href="/fr/pictorialisme.html"><p>LE PICTORIALISME</p></a>
+    <hr>
+    <a href="/fr/artistes.html"><p>LES ARTISTES</p></a>
+    <hr>
+    <a href="/fr/contact.html"><p>CONTACT</p></a>
+        <div class="menu_langue">
+            <a href="/fr/index.html"><img src="/public/icons/EN.svg" alt="Icone cliquable pour changer la langue en anglais"></a>
+            <a href="/en/index.html"><img src="/public/icons/FR.svg" alt="Icone cliquable pour changer la langue en français"></a>
+        </div>
+    </nav>
         
-    <h1>HEINRICH KÜHN</h1>
-        <h2>1866-1944</h2>
-            <p>Nationalité: Austrian, German</p>
-            <p>Naissance: 25 février 1866</p>
-            <p>Décès: 14 septembre 1944</p>
-            <img src="/public/img/heinrich_kuhn_portrait.webp" alt="portait de l'artiste Heinrich kuhn">
-                <figcaption>
-                    <p>Portait de l'artiste Heinrich Khün</p>
-                </figcaption>    
+    <div class="artiste_info">
+        <div class="artiste_info_texte">
+        <h1>HEINRICH KÜHN</h1>
+                <h2>1866-1944</h2>
+                    <p>Nationalité: Austrian, German</p>
+                    <p>Naissance: 25 février 1866</p>
+                    <p>Décès: 14 septembre 1944</p>
+            </div>
+                <img src="/public/img/heinrich_kuhn_portrait.webp" alt="portait de l'artiste Heinrich kuhn">
+            </div> 
 
-        <p>
-        <span class="orange">
-            « L'appareil mécanique n'a pas d'autre importance pour le photographe que par exemple le pinceau pour le peintre »
-        </span>
-        </p>
-        <p>
-            Créer des photographies dont la valeur artistique rivalise avec la peinture, telle est en effet la grande ambition d'Heinrich Kühn.
-            Contemporain des photographes d'avant-garde <a href="https://www.wikiart.org/fr/alfred-stieglitz">Alfred Stieglitz</a> et <a href="https://fr.wikipedia.org/wiki/Edward_Steichen">Edward Steichen</a>, il expérimente avec enthousiasme les nouvelles techniques d&#39;impression photographique
-        </p>
+        <div class="article">        
+            <p>
+            <span class="orange">
+                « L'appareil mécanique n'a pas d'autre importance pour le photographe que par exemple le pinceau pour le peintre »
+            </span>
+            </p>
+            <p>
+                Créer des photographies dont la valeur artistique rivalise avec la peinture, telle est en effet la grande ambition d'Heinrich Kühn.
+                Contemporain des photographes d'avant-garde <a href="https://www.wikiart.org/fr/alfred-stieglitz">Alfred Stieglitz</a> et <a href="https://fr.wikipedia.org/wiki/Edward_Steichen">Edward Steichen</a>, il expérimente avec enthousiasme les nouvelles techniques d&#39;impression photographique
+            </p>
 
     <h1>LES OEUVRES DE HEINRICH KÜHN</h1>
     <figure>
