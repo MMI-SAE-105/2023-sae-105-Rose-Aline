@@ -43,7 +43,8 @@
     margin-right:auto;
     margin-left:auto;
     display:block;
-    max-width:369px
+    max-width:355px;
+    margin-top:40px
 }
 
 #severity_text{
