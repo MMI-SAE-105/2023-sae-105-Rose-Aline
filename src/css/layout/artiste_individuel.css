@@ -15,7 +15,7 @@
 
 .artiste_info_texte{
     margin: -20px;
-    margin-top: 0px
+    margin-top: 0px;
 }
 
 .artiste_info_texte p{
@@ -24,4 +24,26 @@
     color: var(--dark-grey);
     font-size: var(--small-text--ubuntu);
     font-family: 'Ubuntu';
+}
+
+.artistes_i_fig{
+    display:block;
+    position:relative;
+    right:10px;
+}
+
+.artistes_i_img_fig{
+    display:flex
+}
+
+.artistes_i_img_fig img{
+    max-width: 151px;
+    position:relative;
+    margin-left:0;
+    margin:20px
+}
+
+.artistes_i_fig h1, .artistes_i_fig h2{
+    position:relative;
+    right:20px
 }
