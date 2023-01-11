@@ -1,0 +1,42 @@
+
+.ligne_frise{
+    display:flex;
+    position:relative;
+    right:30px
+  }
+  
+  .image_frise{
+    max-width:169px;
+    max-height:187px
+  }
+  
+  .frise_title{
+    margin-left:-5px;
+    margin-right:-5px;
+    padding-left:30px;
+  }
+  
+  .frise_chronologique figcaption{
+  position:relative;
+  bottom:20px;
+  right:15px;
+  }
+  
+  .bouton_frise{
+    position:relative;
+    right:40px
+  }
+
+  .frise_chronologique figure{
+    display:flex;
+    margin-left:2rem;
+  }
+
+#image_last{
+    margin-top:30px;
+    margin-bottom:30px
+}
+
+ .frise_title{
+    padding-bottom:30px
+ }

@@ -66,11 +66,6 @@ h1, h2,.main p, .bouton_plus, .article p {
   margin-top:20px
 }
 
-.frise_chronologique figure{
-  display:flex;
-  margin-left:2rem;
-  margin-top:2rem
-}
 
 .article p{
   font-family: 'Ubuntu';
