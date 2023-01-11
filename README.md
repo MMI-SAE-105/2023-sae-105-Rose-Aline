@@ -3,6 +3,7 @@
 - PRÉNOM : Aline
 - URL du site : http://pictorialisme.alinerose.fr/
 - URL FIGMA : https://www.figma.com/file/K0bz4Eb8xdiYWM3xGJr3hy/SAE-105-Maquette-Aline-ROSE?node-id=322%3A1210&t=K9xtHd650j17KOIw-0
+- URL lighthouse : http://pictorialisme.alinerose.fr/reports/index.html
 
 # Structure de départ pour la SAE 105.
 
