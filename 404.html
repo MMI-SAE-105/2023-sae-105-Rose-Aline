@@ -1,11 +1,55 @@
 <!DOCTYPE html>
-<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-<title>404 - Page Non trouvée</title>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="" {noscroll:menuIsOpen,}>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page non trouvée</title>
+  <link rel="stylesheet" href="/src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+
+</head>
+<body>
+    <header>
+        <a href="/fr/index.html"><img src="/public/icons/index.svg" alt="icone cliquable pour accéder à l'index"></a>
+        <button aria-controls="MenuNav" @click="menuIsOpen = ! menuIsOpen" class="menu_Btn">
+            <img src="/public/icons/menu.svg" alt="icone cliquable pour accéder au menu">
+        </button>
+    </header>
+    
+    <nav id="MenuNav" x-show="menuIsOpen" x-transition.duration.400ms 
+    class="menu_header">
+    <a href="/fr/index.html"><p>ACCUEIL</p></a>
+    <hr>
+    <a href="/fr/exposition.html"><p>EXPOSITION</p></a>
+    <hr>
+    <a href="/fr/pictorialisme.html"><p>LE PICTORIALISME</p></a>
+    <hr>
+    <a href="/fr/artistes.html"><p>LES ARTISTES</p></a>
+    <hr>
+    <a href="/fr/contact.html"><p>CONTACT</p></a>
+        <div class="menu_langue">
+            <a href="/fr/index.html"><img src="/public/icons/EN.svg" alt="Icone cliquable pour changer la langue en anglais"></a>
+            <a href="/en/index.html"><img src="/public/icons/FR.svg" alt="Icone cliquable pour changer la langue en français"></a>
+        </div>
+    </nav>
+
+
 <h1>Page Non trouvée</h1>
 <form action="https://duckduckgo.com/" method="GET" 
     x-data="{ q:'', }" 
     x-on:submit="q = q + ' site:mmimontbeliard.com'">
-    <label for="q">Text à chercher :</label>
-    <input type="text" id="q" name="q" x-model="q">
-    <button type="submit">Rechercher</button>
+    <div class="bar_search">
+        <label for="q">Texte à chercher :</label>
+        <input type="text"  x-model="q">
+    </div>
+    <button type="submit" class="submit_erreur" >Rechercher</button>
 </form>
+
+
+<a href="/fr/index.html">
+    <button class="rechercher">Retourner au site</button>          
+</a>
+
+

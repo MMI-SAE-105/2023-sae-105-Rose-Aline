@@ -1,0 +1,21 @@
+.bar_search{
+    display:grid;
+    margin-left:40px;
+    margin-right:40px
+    }
+
+    .rechercher{
+        background-color: var(--orange);
+        border:none;
+        padding:2px 52px 2px 52px;
+        border-radius: 5px;
+        font-size: var(--sous-titre);
+        font-family: 'Alegreya';
+        margin-top:50px;
+        margin-left:50px;
+      }
+
+      .submit_erreur{
+        margin-top: 10px;
+        margin-left:230px
+      }
