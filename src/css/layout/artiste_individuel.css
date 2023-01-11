@@ -1,0 +1,27 @@
+.artiste_info_texte{
+    display:block
+}
+
+.artiste_info{
+    display:flex
+}
+
+.artiste_info img{
+    max-width:149px;
+    max-height:155px;
+    margin-top:30px;
+    margin-right:20px
+}
+
+.artiste_info_texte{
+    margin: -20px;
+    margin-top: 0px
+}
+
+.artiste_info_texte p{
+    position:relative;
+    left:30px;
+    color: var(--dark-grey);
+    font-size: var(--small-text--ubuntu);
+    font-family: 'Ubuntu';
+}
