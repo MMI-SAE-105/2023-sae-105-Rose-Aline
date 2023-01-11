@@ -37,3 +37,16 @@
 .oeuvre_info figcaption{
     padding-top:25px
 }
+
+#severity_image{
+    margin-right:auto;
+    margin-left:auto;
+    display:block;
+    max-width:369px
+}
+
+#severity_text{
+    position:relative;
+    top:30px;
+    padding-bottom:50px
+}
