@@ -30,6 +30,7 @@
     
       .carrousel {
       position: relative;
+      margin-bottom:20px
     }
 
       .carrousel_ecran img{
