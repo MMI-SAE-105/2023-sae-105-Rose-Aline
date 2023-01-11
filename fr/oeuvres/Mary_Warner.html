@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Broadway at Night - Le pictorialisme</title>
+  <title>Mary Warner à contre-jour
+    - Le pictorialisme</title>
   <link rel="stylesheet" href="/src/css/style.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
 
@@ -13,28 +14,74 @@
 <body>
     <header>
         <a href="/fr/index.html"><img src="/public/icons/index.svg" alt="icone cliquable pour accéder à l'index"></a>
-        <img src="/public/icons/menu.svg" alt="icone cliquable pour accéder au menu">
+        <button aria-controls="MenuNav" @click="menuIsOpen = ! menuIsOpen" class="menu_Btn">
+            <img src="/public/icons/menu.svg" alt="icone cliquable pour accéder au menu">
+        </button>
     </header>
+    
+    <nav id="MenuNav" x-show="menuIsOpen" x-transition.duration.400ms 
+    class="menu_header">
+    <a href="/fr/index.html"><p>ACCUEIL</p></a>
+    <hr>
+    <a href="/fr/exposition.html"><p>EXPOSITION</p></a>
+    <hr>
+    <a href="/fr/pictorialisme.html"><p>LE PICTORIALISME</p></a>
+    <hr>
+    <a href="/fr/artistes.html"><p>LES ARTISTES</p></a>
+    <hr>
+    <a href="/fr/contact.html"><p>CONTACT</p></a>
+        <div class="menu_langue">
+            <a href="/fr/index.html"><img src="/public/icons/EN.svg" alt="Icone cliquable pour changer la langue en anglais"></a>
+            <a href="/en/index.html"><img src="/public/icons/FR.svg" alt="Icone cliquable pour changer la langue en français"></a>
+        </div>
+    </nav>
 
-            
-    <h2>Rückenakt</h2>
-        <h2>1920</h2>
-        <p>HEINRICH KÜHN</p>
+    <div class="oeuvre_info">
+        <div class="oeuvre_info_texte"> 
+        <h2>Mary Warner à contre-jour</h2>
+            <h2>1920</h2>
+            <p>HEINRICH KÜHN</p>
+        </div>
         <figure>
             <img src="/public/img/Mary_Warner_conte_jour.webp" alt="Mary Warner par Henrich Kühn">
             <figcaption>
                 Photo de l'actrice Mary Warner devant une fenêtre
             </figcaption>    
         </figure>
+        </div>
+        <div class="article">
 
-        D&#39;AUTRE OEUVRES DE <a href="/fr/artistes/Heinrich_Kuhn.html"><span class="orange">HEINRICH KÜHN</span></a>
-    </p>
-    <figure>
+     <h1>
+        D&#39;AUTRE OEUVRES DE <a class="orange_link" href="/fr/artistes/Heinrich_Kuhn.html"><span class="orange">HEINRICH KÜHN</span></a>
+    </h1>
+
+    <figure class="artistes_i_img_fig">
         <img src="/public/img/Mary_Warner_Ruckenakt.webp" alt="oeuvre de l'artiste Heinrich Khün">
-        <figcaption>
+        <figcaption class="artistes_i_fig">
                 <h1>Rückenakt</h1> <h2>1920</h2>
             <a href="/fr/oeuvres/Ruckenakt.html">
                 <button>Voir plus</button>          
             </a>
         </figcaption>    
     </figure>
+
+    <footer>
+        <div class="icone_footer">
+                <img src="/public/icons/MMI_dut_small_white.svg" alt="Icone du département MMI de montbéliard">
+            <div class="text_footer">
+                <p>
+                    <b>
+                        MMI 1 - C1   <a href="mailto:alinerose262003@gmail.com">alinerose262003@gmail.com</a>
+                    </b>
+                </p>
+                <p>
+                    Projet réalisé dans le cadre d&#39;un exercice
+                    pédagogique au <a href="http://mmimontbeliard.com/contact">département MMI de Montbéliard</a>
+                </p>
+                </div>
+            </div>
+                <div class="footer_options">
+                    <a href="https://fondation-cartier.tickeasy.com/fr-FR/exposition"><p>Billeterie</p></a>
+                    <a href="/fr/contact.html"><p>Contact</p></a>
+                </div>
+            </footer>
