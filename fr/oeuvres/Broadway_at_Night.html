@@ -11,49 +11,73 @@
 
 </head>
 <body>
-    <header>
-        <a href="/fr/index.html"><img src="/public/icons/index.svg" alt="icone cliquable pour accéder à l'index"></a>
-        <img src="/public/icons/menu.svg" alt="icone cliquable pour accéder au menu">
-    </header>
-
-            
+        <header>
+            <a href="/fr/index.html"><img src="/public/icons/index.svg" alt="icone cliquable pour accéder à l'index"></a>
+            <button aria-controls="MenuNav" @click="menuIsOpen = ! menuIsOpen" class="menu_Btn">
+                <img src="/public/icons/menu.svg" alt="icone cliquable pour accéder au menu">
+            </button>
+        </header>
+        
+        <nav id="MenuNav" x-show="menuIsOpen" x-transition.duration.400ms 
+        class="menu_header">
+        <a href="/fr/index.html"><p>ACCUEIL</p></a>
+        <hr>
+        <a href="/fr/exposition.html"><p>EXPOSITION</p></a>
+        <hr>
+        <a href="/fr/pictorialisme.html"><p>LE PICTORIALISME</p></a>
+        <hr>
+        <a href="/fr/artistes.html"><p>LES ARTISTES</p></a>
+        <hr>
+        <a href="/fr/contact.html"><p>CONTACT</p></a>
+            <div class="menu_langue">
+                <a href="/fr/index.html"><img src="/public/icons/EN.svg" alt="Icone cliquable pour changer la langue en anglais"></a>
+                <a href="/en/index.html"><img src="/public/icons/FR.svg" alt="Icone cliquable pour changer la langue en français"></a>
+            </div>
+        </nav>
+    
+        <div class="oeuvre_info">
+            <div class="oeuvre_info_texte">  
     <h2>Broadway at Night</h2>
         <h2>1905</h2>
         <p>ALVIN LANGDON COBURN</p>
+    </div>
         <figure>
             <img src="/public/img/Alvin_Langdon_Coburn_Bridge.webp" alt="Broadway at Night par Alvin Langton Coburn">
             <figcaption>
                 Photo des lampadaires de Manhattan
             </figcaption>    
         </figure>
-
+    </div>
+    <div class="article">
         <p>
-            Coburn <a href="https://www.metmuseum.org/art/collection/search/260096">a été fasciné</a> par les lampes à arc électrifiées de Midtown Manhattan.
+            <a href="https://www.metmuseum.org/art/collection/search/260096">Coburn a été fasciné</a> par les lampes à arc électrifiées de Midtown Manhattan.
         </p>
-        <span class="orange">
-            "Ce n&#39;est qu&#39;au crépuscule que la ville se révèle à moi dans la plénitude de sa beauté, quand les lumières à arc sur l&#39;Avenue se mettent à exister. Plusieurs soirs, je les ai regardés[…]”
-        </span>
-    <p>
-        D&#39;AUTRE OEUVRES DE <a href="/fr/artistes/Alvin_langdon_coburn.html"><span class="orange">ALVIN LANGDON COBURN</span></a>
-    </p>
-    <figure>
-        <img src="/public/img/Alvin_Langdon_Coburn_Vortograph.webp" alt="oeuvre de l'artiste Alvin Langton Coburn">
-        <figcaption>
-                <h1>Vortograph</h1> <h2>1917</h2>
-            <a href="/fr/oeuvres/Votograph.html">
-                <button>Voir plus</button>          
-            </a>
-        </figcaption>    
-    </figure>
-    <figure>
-        <img src="/public/img/Alvin_Langdon_Coburn_Bridge.webp" alt="oeuvre de l'artiste Alvin Langton Coburn">
-        <figcaption>
-                <h1>Williamsburg Bridge</h1> <h2>1909</h2>
-            <a href="/fr/oeuvres/Williamsburg_Bridge.html">
-                <button>Voir plus</button>          
-            </a>
-        </figcaption>    
-    </figure>
+        <div class="orange_background"><span class="orange">
+                "Ce n&#39;est qu&#39;au crépuscule que la ville se révèle à moi dans la plénitude de sa beauté, quand les lumières à arc sur l&#39;Avenue se mettent à exister. Plusieurs soirs, je les ai regardés[…]”
+            </span>
+        </div>
+        <h1>
+            D&#39;AUTRE OEUVRES DE <a class="orange_link" href="/fr/artistes/Alvin_langdon_coburn.html"><span class="orange">ALVIN LANGDON COBURN</span></a>
+        </h1>  
+        <figure class="artistes_i_img_fig">
+            <img src="/public/img/Alvin_Langdon_Coburn_Vortograph.webp" alt="oeuvre de l'artiste Alvin Langton Coburn">
+            <figcaption class="artistes_i_fig">
+                    <h1>Vortograph</h1> <h2>1917</h2>
+                <a href="/fr/oeuvres/Votograph.html">
+                    <button>Voir plus</button>          
+                </a>
+            </figcaption>    
+        </figure>    
+        <figure class="artistes_i_img_fig">
+            <img src="/public/img/Alvin_Langdon_Coburn_Bridge.webp" alt="oeuvre de l'artiste Alvin Langton Coburn">
+            <figcaption class="artistes_i_fig">
+                    <h1>Williamsburg Bridge</h1> <h2>1909</h2>
+                <a href="/fr/oeuvres/Williamsburg_Bridge.html">
+                    <button>Voir plus</button>          
+                </a>
+            </figcaption>    
+        </figure>
+</div>
 
     
     <footer>
