@@ -69,9 +69,20 @@ h1, h2,.main p, .bouton_plus, .article p {
 .article p{
   font-family: 'Ubuntu';
   font-size: var(--Texte-Ubuntu);
-  padding-top:20px
+  padding-top:02px
 }
 
 .article a{
   color:black
+}
+
+.orange_background{
+  margin: 0px 10px 0px 10px;
+  background-color: var(--beige);
+  font-family: 'Alegreya';
+  font-size: var(--sous-titre);
+  padding: 5px 0px 10px 10px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top:10px
 }
