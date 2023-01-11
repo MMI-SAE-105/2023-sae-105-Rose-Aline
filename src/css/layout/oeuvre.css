@@ -56,3 +56,9 @@
 #Bridge_img{
     max-width:190px
 }
+
+.oeuvre_info figcaption{
+    color: var(--dark-grey);
+    font-size: var(--small-text--ubuntu);
+    font-family: 'Ubuntu';
+}
